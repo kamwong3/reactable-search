@@ -220,7 +220,7 @@ const ExpanderButton = (props) => {
 const SortArrow = (props) => {
   const rotate = props.rotate || (props.down ? 90 : -90);
   return (
-    <div style={{WebkitTransform: `rotate(${rotate}deg)`, display: 'inline-block', marginLeft: '5px'}}>➜</div>
+    <div style={{msTransform: `rotate(${rotate}deg)`, WebkitTransform: `rotate(${rotate}deg)`, display: 'inline-block', marginLeft: '5px'}}>➜</div>
   )
 }
 
